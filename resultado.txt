@@ -1,0 +1,24 @@
+commit 9ccf69e879fbe4e0c29ed14e40102a3c8e22cad2 (HEAD -> main, origin/main)
+Author: Leonardo <oleoalonso@gmail.com>
+Date:   Sun Sep 19 17:04:35 2021 -0300
+
+    Terceiro commit / arquivos cor e fruta
+
+commit bc70855508350bf9ed9aa32520393965179eb3e5
+Author: Leonardo <oleoalonso@gmail.com>
+Date:   Sun Sep 19 17:01:06 2021 -0300
+
+    segundo commit
+
+commit 8034d9ecb4713c1d130ede8d36107e2585d8d6a9
+Author: Leonardo <oleoalonso@gmail.com>
+Date:   Sun Sep 19 16:36:04 2021 -0300
+
+    Meu primeiro commit
+
+
+=====================================================================================================
+
+0000000000000000000000000000000000000000 8034d9ecb4713c1d130ede8d36107e2585d8d6a9 Leonardo <oleoalonso@gmail.com> 1632080443 -0300	update by push
+8034d9ecb4713c1d130ede8d36107e2585d8d6a9 bc70855508350bf9ed9aa32520393965179eb3e5 Leonardo <oleoalonso@gmail.com> 1632081699 -0300	update by push
+bc70855508350bf9ed9aa32520393965179eb3e5 9ccf69e879fbe4e0c29ed14e40102a3c8e22cad2 Leonardo <oleoalonso@gmail.com> 1632081915 -0300	update by push
