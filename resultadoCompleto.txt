@@ -1,0 +1,405 @@
+C:\Users\leoal\Git>cd pasta1
+
+C:\Users\leoal\Git\pasta1>dir
+ O volume na unidade C não tem nome.
+ O Número de Série do Volume é 02F0-AAAE
+
+ Pasta de C:\Users\leoal\Git\pasta1
+
+19/09/2021  14:50    <DIR>          .
+19/09/2021  14:50    <DIR>          ..
+               0 arquivo(s)              0 bytes
+               2 pasta(s)   148.170.326.016 bytes disponíveis
+
+C:\Users\leoal\Git\pasta1>git init
+Initialized empty Git repository in C:/Users/leoal/Git/pasta1/.git/
+
+C:\Users\leoal\Git\pasta1>git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+
+
+
+C:\Users\leoal\Git\pasta1>git remote
+origin
+
+C:\Users\leoal\Git\pasta1>git remote -v
+origin  https://github.com/oleoalonso/repoAtv1.git (fetch)
+origin  https://github.com/oleoalonso/repoAtv1.git (push)
+
+C:\Users\leoal\Git\pasta1>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        cor.txt
+        frase.txt
+        fruta.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+
+C:\Users\leoal\Git\pasta1>git remote add origin https://github.com/oleoalonso/repoAtv1.git
+
+C:\Users\leoal\Git\pasta1>
+
+
+C:\Users\leoal\Git\pasta1>git commit -m "primeiro commit"
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        cor.txt
+        frase.txt
+        fruta.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\leoal\Git\pasta1>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        cor.txt
+        frase.txt
+        fruta.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\leoal\Git\pasta1>git branch -M main
+
+C:\Users\leoal\Git\pasta1>git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        cor.txt
+        frase.txt
+        fruta.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\leoal\Git\pasta1>git remote add origin
+
+C:\Users\leoal\Git\pasta1>
+
+C:\Users\leoal\Git\pasta1>git remote add origin https://github.com/oleoalonso/repoAtv1.git
+error: remote origin already exists.
+
+C:\Users\leoal\Git\pasta1>git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/oleoalonso/repoAtv1.git'
+
+C:\Users\leoal\Git\pasta1>git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        cor.txt
+        frase.txt
+        fruta.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+
+C:\Users\leoal\Git\pasta1>git add -A
+
+C:\Users\leoal\Git\pasta1>git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   README.md.txt
+
+
+C:\Users\leoal\Git\pasta1>git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   README.md.txt
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    README.md.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.txt
+
+
+C:\Users\leoal\Git\pasta1>git add -A
+
+C:\Users\leoal\Git\pasta1>git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   README.txt
+
+
+C:\Users\leoal\Git\pasta1>git init
+Reinitialized existing Git repository in C:/Users/leoal/Git/pasta1/.git/
+
+C:\Users\leoal\Git\pasta1>git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   README.txt
+
+
+C:\Users\leoal\Git\pasta1>git commit -m "Meu primeiro commit"
+[main (root-commit) c468428] Meu primeiro commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.txt
+
+C:\Users\leoal\Git\pasta1>git branch
+* main
+
+
+C:\Users\leoal\Git\pasta1>git log
+commit 8034d9ecb4713c1d130ede8d36107e2585d8d6a9 (HEAD -> main)
+Author: Leonardo <oleoalonso@gmail.com>
+Date:   Sun Sep 19 16:36:04 2021 -0300
+
+    Meu primeiro commit
+
+
+C:\Users\leoal\Git\pasta1>git status
+On branch main
+nothing to commit, working tree clean
+
+C:\Users\leoal\Git\pasta1>git remote
+origin
+
+
+C:\Users\leoal\Git\pasta1>git branch -M main
+
+C:\Users\leoal\Git\pasta1>git push -u origin main
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 243 bytes | 243.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/oleoalonso/repoAtv1.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+
+C:\Users\leoal\Git\pasta1>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        cor.txt
+        frase.txt
+        fruta.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\leoal\Git\pasta1>git add frase.txt
+
+C:\Users\leoal\Git\pasta1>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   frase.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        cor.txt
+        fruta.txt
+
+
+C:\Users\leoal\Git\pasta1>git push -u origin main
+Everything up-to-date
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+
+C:\Users\leoal\Git\pasta1>git branch -M main
+
+C:\Users\leoal\Git\pasta1>git push -u origin main
+Everything up-to-date
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+
+
+C:\Users\leoal\Git\pasta1>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   frase.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        cor.txt
+        fruta.txt
+
+
+C:\Users\leoal\Git\pasta1>git branch -M main
+
+
+C:\Users\leoal\Git\pasta1>git push -u origin
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 340 bytes | 170.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/oleoalonso/repoAtv1.git
+   8034d9e..bc70855  main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+
+C:\Users\leoal\Git\pasta1>git push -u origin
+
+C:\Users\leoal\Git\pasta1>
+
+C:\Users\leoal\Git\pasta1>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        cor.txt
+        fruta.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\leoal\Git\pasta1>git remote
+origin
+
+C:\Users\leoal\Git\pasta1>git remote -v
+origin  https://github.com/oleoalonso/repoAtv1.git (fetch)
+origin  https://github.com/oleoalonso/repoAtv1.git (push)
+
+C:\Users\leoal\Git\pasta1>git add -A
+
+C:\Users\leoal\Git\pasta1>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   cor.txt
+        new file:   fruta.txt
+
+
+C:\Users\leoal\Git\pasta1>git commit -am "Terceiro commit / arquivos cor e fruta"
+[main 9ccf69e] Terceiro commit / arquivos cor e fruta
+ 2 files changed, 2 insertions(+)
+ create mode 100644 cor.txt
+ create mode 100644 fruta.txt
+
+C:\Users\leoal\Git\pasta1>git push -u origin
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 365 bytes | 182.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/oleoalonso/repoAtv1.git
+   bc70855..9ccf69e  main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+
+C:\Users\leoal\Git\pasta1>git diff
+
+C:\Users\leoal\Git\pasta1>git log
+commit 9ccf69e879fbe4e0c29ed14e40102a3c8e22cad2 (HEAD -> main, origin/main)
+Author: Leonardo <oleoalonso@gmail.com>
+Date:   Sun Sep 19 17:04:35 2021 -0300
+
+    Terceiro commit / arquivos cor e fruta
+
+commit bc70855508350bf9ed9aa32520393965179eb3e5
+Author: Leonardo <oleoalonso@gmail.com>
+Date:   Sun Sep 19 17:01:06 2021 -0300
+
+    segundo commit
+
+commit 8034d9ecb4713c1d130ede8d36107e2585d8d6a9
+Author: Leonardo <oleoalonso@gmail.com>
+Date:   Sun Sep 19 16:36:04 2021 -0300
+
+    Meu primeiro commit
+
+C:\Users\leoal\Git\pasta1>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        resultado.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\leoal\Git\pasta1>git add -A
+
+C:\Users\leoal\Git\pasta1>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   resultado.txt
+
+
+C:\Users\leoal\Git\pasta1>git commit -am "Histórico do git"
+[main 4b44bce] Histórico do git
+ 1 file changed, 24 insertions(+)
+ create mode 100644 resultado.txt
+
+C:\Users\leoal\Git\pasta1>git push -u origin
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 603 bytes | 603.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/oleoalonso/repoAtv1.git
+   9ccf69e..4b44bce  main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+
+C:\Users\leoal\Git\pasta1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
